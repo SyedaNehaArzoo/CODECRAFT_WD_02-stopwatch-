@@ -1,0 +1,112 @@
+/* General Style */
+body {
+  margin: 0;
+  font-family: 'Baloo 2', cursive;
+  display: flex;
+  background-color: #ffe6f2;
+  background-image: -moz-element(); /* replace with custom kawaii bg */
+  background-size: 200px;
+  background-repeat: repeat;
+}
+
+/* Sidebar Navbar */
+.sidebar {
+  width: 220px;
+  background: #ff99cc;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px white, 0 0 20px pink;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #ffe6f2;
+  text-shadow: 0 0 5px white, 0 0 15px hotpink;
+}
+
+.sidebar .quote {
+  margin-top: 50px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Main Stopwatch Area */
+.container {
+  margin-left: 250px;
+  text-align: center;
+  padding: 50px;
+  flex: 1;
+}
+
+.title {
+  font-size: 32px;
+  color: #ff3399;
+  text-shadow: 0 0 10px white, 0 0 20px pink;
+}
+
+#stopwatch {
+  font-size: 60px;
+  margin: 30px 0;
+  color: #ff66b2;
+  text-shadow: 0 0 15px white, 0 0 25px hotpink;
+}
+
+/* Buttons */
+.buttons button {
+  background: #ff99cc;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff66b2, 0 0 20px #ff3399;
+  transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+  background: #ff66b2;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px white, 0 0 30px hotpink;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 180px;
+    font-size: 14px;
+  }
+  .container {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  #stopwatch {
+    font-size: 40px;
+  }
+}
